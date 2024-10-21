@@ -24,3 +24,7 @@ Deskripsi singkat tentang Praktikum 5.
 ![Screenshot Praktikum 5](images/P5J5_2.png)
 ![Screenshot Praktikum 5](images/P5J5_3.png)
 ![Screenshot Praktikum 5](images/P5J5_4.png)
+
+## Task
+![Screenshot Task](images/TJ5_1.png)
+![Screenshot Task](images/TJ5_2.png)
