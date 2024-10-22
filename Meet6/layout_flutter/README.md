@@ -38,3 +38,17 @@ Tiga bagian diatur secara vertikal dalam Column:
   * textSection berisi instruksi teks.
 
 ![Screenshot P3J6](images/P3J6.png)
+
+
+## Praktikum 4
+* assets:
+  * Menunjukkan lokasi file gambar (landscape.jpg) dalam folder images. Ini harus didefinisikan di file pubspec.yaml agar Flutter mengenali dan menyertakan gambar saat aplikasi dibangun.
+* Image.asset:
+  * Merupakan widget untuk menampilkan gambar dari asset lokal.
+* Parameter:
+  * 'images/landscape.jpg': Path ke file gambar yang ingin ditampilkan.
+  * width: 600: Lebar gambar yang ditentukan dalam piksel.
+  * height: 240: Tinggi gambar yang ditentukan dalam piksel.
+  * fit: BoxFit.cover: Mengatur gambar agar memenuhi area yang ditentukan dengan memotong bagian yang berlebih, menjaga rasio aspek gambar.
+
+![Screenshot P4J6](images/P4J6.png)
