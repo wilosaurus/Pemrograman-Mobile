@@ -1,16 +1,14 @@
-# layout_flutter
+# layout_flutter / Jobsheet 6
 
-A new Flutter project.
+## Praktikum 1
+* Main Function & MyApp Class:
+  * Fungsi main() menjalankan aplikasi dengan widget MyApp.
+  * MyApp adalah widget utama yang bersifat stateless (tidak berubah), dan menggunakan MaterialApp untuk membungkus antarmuka aplikasi.
+* Title Section:
+  * titleSection adalah widget yang dibuat menggunakan Container, berisi baris (Row) yang memiliki dua bagian:
+    * Kolom Kiri (Expanded): Berisi teks "Wisata Gunung di Batu" dan "Batu, Malang, Indonesia". Judulnya dicetak tebal, sedangkan teks lokasinya berwarna abu-abu.
+    * Kolom Kanan: Berisi ikon bintang berwarna merah dan angka "41", merepresentasikan jumlah rating atau nilai.
+* Tampilan Utama:
+  * Di dalam metode build(), terdapat Scaffold yang menyediakan struktur dasar dengan sebuah AppBar (judul aplikasi) dan sebuah kolom di body yang memuat title section.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Screenshot P1J6](images/P1J6.png)
