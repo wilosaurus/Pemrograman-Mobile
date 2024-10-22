@@ -5,19 +5,41 @@ void main() => runApp(const MyApp());
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+  //Deklarasi _buildButtonColum
+  Column _buildButtonColumn(Color color, IconData icon, String label) {
+    return Column(
+      mainAxisSize: MainAxisSize.min, // Ukuran minimum agar sesuai konten
+      mainAxisAlignment: MainAxisAlignment.center, // Ikon dan teks diposisikan di tengah
+      children: [
+        Icon(icon, color: color), // Ikon dengan warna utama
+        Container(
+          margin: const EdgeInsets.only(top: 8), // Margin atas antar ikon dan teks
+          child: Text(
+            label,
+            style: TextStyle(
+              fontSize: 12, // Ukuran teks kecil
+              fontWeight: FontWeight.w400, // Bobot teks normal
+              color: color, // Warna teks sesuai warna utama
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
-    // Soal 4: Implementasi title row
+    //Implementasi title row
     Widget titleSection = Container(
       padding: const EdgeInsets.all(16), // Padding untuk seluruh title section
       child: Row(
         children: [
           Expanded(
-            // Soal 1: Menambahkan Expanded widget
+            //Menambahkan Expanded widget
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Soal 2: Mengatur padding dan text style
+                //Mengatur padding dan text style
                 Container(
                   padding: const EdgeInsets.only(bottom: 8), // Padding untuk jarak antara teks
                   child: const Text(
@@ -36,7 +58,7 @@ class MyApp extends StatelessWidget {
               ],
             ),
           ),
-          // Soal 3: Menambahkan icon dan teks
+          //Menambahkan icon dan teks
           Icon(
             Icons.star, // Menggunakan icon star
             color: Colors.red[500], // Mengatur warna icon
@@ -44,6 +66,17 @@ class MyApp extends StatelessWidget {
           const Text('41'), // Teks disebelah icon
         ],
       ),
+    );
+
+    // Soal 2: Membuat buttonSection dengan ikon CALL, ROUTE, SHARE
+    Color color = Theme.of(context).primaryColor;
+    Widget buttonSection = Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly, // Jarak antar kolom seimbang
+      children: [
+        _buildButtonColumn(color, Icons.call, 'CALL'), // Kolom pertama
+        _buildButtonColumn(color, Icons.near_me, 'ROUTE'), // Kolom kedua
+        _buildButtonColumn(color, Icons.share, 'SHARE'), // Kolom ketiga
+      ],
     );
 
     return MaterialApp(
@@ -55,6 +88,7 @@ class MyApp extends StatelessWidget {
         body: Column(
           children: [
             titleSection, // Menambahkan titleSection ke dalam body
+            buttonSection, // Menambahkan buttonSection ke dalam body
           ],
         ),
       ),
