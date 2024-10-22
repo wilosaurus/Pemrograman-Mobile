@@ -25,3 +25,16 @@
   * titleSection dan buttonSection ditampilkan dalam Column di dalam body dari Scaffold.
 
 ![Screenshot P2J6](images/P2J6.png)
+
+
+## Praktikum 3
+* textSection:
+  * Kode membuat widget Text yang ditempatkan dalam sebuah Container dengan padding 32. Teks tersebut menjelaskan instruksi untuk mencari teks yang sesuai dengan foto atau tempat wisata, disertai dengan nama dan NIM pengguna.
+Properti softWrap: true memastikan teks akan membungkus jika melebihi lebar layar.
+* Layout:
+Tiga bagian diatur secara vertikal dalam Column:
+  * titleSection berisi judul dan ikon rating.
+  * buttonSection berisi tiga tombol (CALL, ROUTE, SHARE).
+  * textSection berisi instruksi teks.
+
+![Screenshot P3J6](images/P3J6.png)

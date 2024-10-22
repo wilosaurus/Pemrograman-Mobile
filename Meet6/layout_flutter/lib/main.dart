@@ -79,6 +79,19 @@ class MyApp extends StatelessWidget {
       ],
     );
 
+    Widget textSection = Container(
+      padding: const EdgeInsets.all(32),
+      child: const Text(
+        'Carilah teks di internet yang sesuai '
+        'dengan foto atau tempat wisata yang ingin '
+        'Anda tampilkan. '
+        'Tambahkan nama dan NIM Anda sebagai '
+        'identitas hasil pekerjaan Anda. '
+        'Selamat mengerjakan 🙂.',
+        softWrap: true,
+      ),
+    );
+
     return MaterialApp(
       title: 'Flutter layout: Mochamad Wildani Azizi/2241720171',
       home: Scaffold(
@@ -89,6 +102,7 @@ class MyApp extends StatelessWidget {
           children: [
             titleSection, // Menambahkan titleSection ke dalam body
             buttonSection, // Menambahkan buttonSection ke dalam body
+            textSection, // Menambahkan textSection ke dalam body
           ],
         ),
       ),
